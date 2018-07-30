@@ -15,9 +15,9 @@ This project aims to analyze data comming from a pre-set database. The goals wer
 4. Place files within the vagrant folder of the repo you've just cloned. fullstack-nanodegree-vm > vagrant > new folder (log-analysis)
 
 5. For the python version, go to:
-⋅⋅***On Windows**, go to https://www.python.org/downloads/windows/
-⋅⋅***On Linux**, on the terminal run command sudo apt install python2.7 python-pip
-⋅⋅***On MacOS**, go to https://www.python.org/downloads/mac-osx/
+⋅⋅* **On Windows**, go to https://www.python.org/downloads/windows/
+⋅⋅* **On Linux**, on the terminal run command sudo apt install python2.7 python-pip
+⋅⋅* **On MacOS**, go to https://www.python.org/downloads/mac-osx/
 
 <h2>To run this project:</h2>
 	
@@ -27,11 +27,11 @@ This project aims to analyze data comming from a pre-set database. The goals wer
 	run vagrant ssh
 	cd into folder /vagrant/log-analysis
 	
-	Creating necessary views: 
-		run psql -d news
-		run `create view totalrequests as select count(*) as total, date(TIME) as date from log group by date;`
-		run `create view errorrequests as select count(*) as total, date(TIME) as date from log where status != '200 OK' group by date;`
-		run `create view requests_and_errors as select sum(errorrequests.total) as total_errors, sum(totalrequests.total) as total_requests, errorrequests.date from errorrequests, totalrequests where errorrequests.date = totalrequests.date group by errorrequests.date;` 
+Creating necessary views: 
+1. run psql -d news
+2. run `create view totalrequests as select count(*) as total, date(TIME) as date from log group by date;`
+3. run `create view errorrequests as select count(*) as total, date(TIME) as date from log where status != '200 OK' group by date;`
+4. run `create view requests_and_errors as select sum(errorrequests.total) as total_errors, sum(totalrequests.total) as total_requests, errorrequests.date from errorrequests, totalrequests where errorrequests.date = totalrequests.date group by errorrequests.date;` 
 
 	Press ctrl + D to exit PSQL
 	Run python log-analysis-project.py
