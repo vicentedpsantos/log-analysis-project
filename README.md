@@ -9,15 +9,15 @@ This project aims to analyze data comming from a pre-set database. The goals wer
 
 <h2>Installation of prerequisites:</h2>
 	
-	Install Vagrant and VirtualBox
-	Clone Udacity's Repo at [Udacity](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip "Udacity Fullstack-Nanodegree-VM")
-	Download the database and its necessary tables from this repository
-	Place files within the vagrant folder of the repo you've just cloned. fullstack-nanodegree-vm > vagrant > new folder (log-analysis)
-	
-	For the python version, go to:
-	**On Windows**, go to https://www.python.org/downloads/windows/
-	**On Linux**, on the terminal run command sudo apt install python2.7 python-pip
-	**On MacOS**, go to https://www.python.org/downloads/mac-osx/
+Install Vagrant and VirtualBox
+Clone Udacity's Repo at [Udacity](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip "Udacity Fullstack-Nanodegree-VM")
+Download the database and its necessary tables from this repository
+Place files within the vagrant folder of the repo you've just cloned. fullstack-nanodegree-vm > vagrant > new folder (log-analysis)
+
+For the python version, go to:
+**On Windows**, go to https://www.python.org/downloads/windows/
+**On Linux**, on the terminal run command sudo apt install python2.7 python-pip
+**On MacOS**, go to https://www.python.org/downloads/mac-osx/
 
 <h2>To run this project:</h2>
 	
