@@ -1,0 +1,18 @@
+The most popular three articles are:
+
+Accesses: 338647;     Article: Candidate is jerk, alleges rival
+Accesses: 253801;     Article: Bears love berries, alleges bear
+Accesses: 170098;     Article: Bad things gone, say good people
+
+
+The day with most errors was:
+
+2016-07-17 at    2.26% of the total requests.
+
+
+The most popular authors are:
+
+Author: Ursula La Multa;     Accesses: 512805
+Author: Rudolf von Treppenwitz;     Accesses: 427781
+Author: Anonymous Contributor;     Accesses: 171762
+Author: Markoff Chaney;     Accesses: 85387
