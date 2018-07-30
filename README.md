@@ -3,9 +3,9 @@
 This project aims to analyze data comming from a pre-set database. The goals were to identify the most popular articles and authors, as well as pinpoint the day where most of the HTTP request errors happened within a given date range.
 
 <h2>Prerequisites: </h2>
-	python 2.7
-	Vagrant
-	VirtualBox
+	python 2.7  
+	Vagrant  
+	VirtualBox  
 
 <h2>Installation of prerequisites:</h2>
 	
@@ -14,7 +14,7 @@ This project aims to analyze data comming from a pre-set database. The goals wer
 3. Download the database and its necessary tables from this repository
 4. Place files within the vagrant folder of the repo you've just cloned. fullstack-nanodegree-vm > vagrant > new folder (log-analysis)
 
-5. For the python version, go to:
+5. For the python version, go to:  
 ⋅⋅* **On Windows**, go to https://www.python.org/downloads/windows/  
 ⋅⋅* **On Linux**, on the terminal run command sudo apt install python2.7 python-pip  
 ⋅⋅* **On MacOS**, go to https://www.python.org/downloads/mac-osx/  
@@ -37,6 +37,6 @@ Creating necessary views:
 	Run python log-analysis-project.py  
 
 <h2>Built With</h2>
-	Vagrant, VirtualBox
-	PostgreSQL, python
+	Vagrant, VirtualBox  
+	PostgreSQL, python  
 
