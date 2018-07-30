@@ -1,6 +1,6 @@
 <h1>Log Analysis Project</h1>
 
-This project aims to analyze data comming from a pre-set database. The goals were to identify the most popular articles and authors, as well as pinpoint the day where most of the HTTP request errors happened within a given date range.
+This project aims to analyze data coming from a pre-set database. The goals were to identify the most popular articles and authors, as well as pinpoint the day where most of the HTTP request errors happened within a given date range.
 
 <h2>Prerequisites: </h2>
 	python 2.7  
