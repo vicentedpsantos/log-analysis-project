@@ -12,7 +12,7 @@ The day with most errors was:
 
 The most popular authors are:
 
-Author: Ursula La Multa;     Accesses: 512805
-Author: Rudolf von Treppenwitz;     Accesses: 427781
-Author: Anonymous Contributor;     Accesses: 171762
-Author: Markoff Chaney;     Accesses: 85387
+Author: Ursula La Multa;     Accesses: 507594
+Author: Rudolf von Treppenwitz;     Accesses: 423457
+Author: Anonymous Contributor;     Accesses: 170098
+Author: Markoff Chaney;     Accesses: 84557
