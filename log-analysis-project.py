@@ -6,20 +6,22 @@ import psycopg2
 # defining name of database to be used
 DBNAME = "news"
 
-try:
-    db = psycopg2.connect(database=DBNAME)
-except:
-    print ("Unable to connect to the database")
+def connect_db():
+    try:
+        db = psycopg2.connect(database=DBNAME)
+    except:
+        print ("Unable to connect to the database")
+    return db
 
 articles_query = '''select count(*) as accesses, articles.title
-from articles inner	join log on log.path like concat('%',
-articles.slug, '%') where log.status = '200 OK' group
-by articles.title order by accesses desc limit 3'''
+from articles inner	join log on log.path = concat('/article/',articles.slug)
+where log.status = '200 OK' group by articles.title order by accesses desc
+limit 3'''
 
 authors_query = '''select authors.name, count(*) as accesses from
-articles inner join log on log.path like concat('%', articles.slug,
-'%') inner join authors on articles.author = authors.id
-where log.status = '200 OK' group by authors.name order by accesses desc;'''
+articles inner join log on log.path = concat('/article/',articles.slug)
+inner join authors on articles.author = authors.id where log.status =
+'200 OK' group by authors.name order by accesses desc;'''
 
 errors_query = '''select date, to_char(100.0*total_errors/
 total_requests,'999D99%') as percentage from
@@ -62,8 +64,10 @@ def get_day_with_most_errors():
         print(str(day[0]) + " at " + str(day[1] + " of the total" +
               " requests."))
 
-get_most_popular_articles()
-get_day_with_most_errors()
-get_most_popular_authors()
-db.close()
 
+if __name__ == '__main__':
+    db = connect_db()
+    get_most_popular_articles()
+    get_day_with_most_errors()
+    get_most_popular_authors()
+    db.close()
