@@ -71,5 +71,4 @@ if __name__ == '__main__':
     get_day_with_most_errors()
     get_most_popular_authors()
     db.close()
-
     
