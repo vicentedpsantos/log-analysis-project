@@ -53,8 +53,7 @@ def get_most_popular_authors():
 
 def get_day_with_most_errors():
     """Returns the day on which more than 1% of
-    errors occured, including a column with http code
-    sent to browser"""
+    errors occured"""
     cursor = db.cursor()
     cursor.execute(errors_query)
     day_with_most_errors = cursor.fetchall()
